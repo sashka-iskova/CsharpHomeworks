@@ -8,18 +8,15 @@ namespace Class02_Homework_Task3
         {
             Console.WriteLine("Swap Numbers");
             Console.WriteLine("Input the first number");
-            string firstInput = Console.ReadLine();
-            int x = Int32.Parse(firstInput);
+            int x = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Input the second number");
-            string secondInput = Console.ReadLine();
-            int y = Int32.Parse(secondInput);
+            int y = Int32.Parse(Console.ReadLine());
             x = x + y; 
             y = x - y; 
             x = x - y;
             Console.WriteLine("Output after swaping");
             Console.WriteLine("The value for x is: " + x);
             Console.WriteLine("The value for y is: " + y);
-
         }
     }
 }
