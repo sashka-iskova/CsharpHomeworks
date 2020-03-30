@@ -8,19 +8,14 @@ namespace Class02_Homework_Task2
         {
             Console.WriteLine("Average Number");
             Console.WriteLine("Enter the First Number");
-            string firstInput = Console.ReadLine();
-            int firstNumber = Int32.Parse(firstInput);
+            int firstNumber = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Second Number");
-            string secondInput = Console.ReadLine();
-            int secondNumber = Int32.Parse(secondInput);
+            int secondNumber = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Third Number");
-            string thirdInput = Console.ReadLine();
-            int thirdNumber = Int32.Parse(thirdInput);
+            int thirdNumber = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Forth Number");
-            string forthInput = Console.ReadLine();
-            int forthNumber = Int32.Parse(forthInput);
-            Console.WriteLine((firstNumber + secondNumber + thirdNumber + forthNumber) / 4);
-
+            int forthNumber = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("The average number is: " + ((firstNumber + secondNumber + thirdNumber + forthNumber) / 4));
         }
     }
 }
