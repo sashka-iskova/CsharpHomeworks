@@ -1,2 +1,3 @@
 # CsharpHomeworks
-Homeworks for the subject C#
+This repository is made for C# homeworks
+
