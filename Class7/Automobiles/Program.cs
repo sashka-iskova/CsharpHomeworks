@@ -9,16 +9,19 @@ namespace Automobiles
         {
 
          
-            ElectricCar elCar1 = new ElectricCar("Mahindra", "e2o plus", 4, 230, 100, Consumption.High);
-            ElectricCar elCar2 = new ElectricCar("Audi", "Q2 L e-Tron", 2, 250, 85, Consumption.Economic);
-            ElectricCar elCar3 = new ElectricCar("Chery", "QQ3",5,225,105, Consumption.Medium);
+            ElectricCar elCar1 = new ElectricCar("Mahindra", "e2o plus", 4, 230, 135, Consumption.High);
+            ElectricCar elCar2 = new ElectricCar("Audi", "Q2 L e-Tron", 2, 250, 100, Consumption.Economic);
+            ElectricCar elCar3 = new ElectricCar("Chery", "QQ3",5,225,120, Consumption.Medium);
             
             FuelCar fuCar1 = new FuelCar("Peugeot","208 II", 4,260,102, 1234,Consumption.Medium, EngineType.Petrol);
             FuelCar fuCar2 = new FuelCar("Mazda", "208 II", 4, 280, 95,468, Consumption.Economic, EngineType.Diesel);
             FuelCar fuCar3 = new FuelCar("Porsche", "Taycan", 4, 300, 110,2357, Consumption.High,EngineType.Diesel);
 
-
-            elCar1.Drive(346);
+            Console.WriteLine("***********************************************");
+            elCar1.Drive(250);
+            Console.WriteLine(elCar1.BatteryUsed.ToString());
+            elCar1.Recharge(80);
+            Console.WriteLine(elCar1.BatteryUsed.ToString());
             elCar2.Drive(234);
             elCar3.Drive(112);
             Console.WriteLine("***********************************************");
