@@ -44,9 +44,10 @@ namespace ATM
                 Console.WriteLine("Enter your pin number");
                 string pinNum = Console.ReadLine();
                 Int32.TryParse(pinNum, out int pinNumber);
-                Customer.IsCardAndPinValid(atm, cardNumber, pinNumber);
+               Customer.IsCardAndPinValid(atm, cardNumber, pinNumber);
+            
 
-                 Customer.TransactionAction(atm);
+                 //Customer.TransactionAction(atm);
 
 
 

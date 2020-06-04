@@ -23,19 +23,16 @@ namespace Models
                 bateryUsed = (distance * 2) / 10;
             if (Consumption == Consumption.High)
                 bateryUsed = (distance * 3) / 10;
-            double x = (bateryUsed * 100) / BatteryCapacity;
-            if (x > 100)
+            double used = (bateryUsed * 100) / BatteryCapacity;
+            if (used > 100)
             {
                 Console.WriteLine($"I'm sorry, you have used the total ammount of energy of this car.");
                 BatteryUsed = 0;
             }
-            else if(x < 100)
+            else if(used < 100)
             {
-                BatteryUsed = x;
+                BatteryUsed = used;
             }
-
-           
-
         }
         public void Recharge(int inputMins)
             {
@@ -50,5 +47,5 @@ namespace Models
                 BatteryUsed = 0;
             }
     }
-    }
+  }
 }

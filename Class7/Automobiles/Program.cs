@@ -17,33 +17,26 @@ namespace Automobiles
             FuelCar fuCar2 = new FuelCar("Mazda", "208 II", 4, 280, 95,468, Consumption.Economic, EngineType.Diesel);
             FuelCar fuCar3 = new FuelCar("Porsche", "Taycan", 4, 300, 110,2357, Consumption.High,EngineType.Diesel);
 
-            Console.WriteLine("***********************************************");
+           
             elCar1.Drive(250);
-            Console.WriteLine(elCar1.BatteryUsed.ToString());
-            elCar1.Recharge(80);
-            Console.WriteLine(elCar1.BatteryUsed.ToString());
             elCar2.Drive(234);
             elCar3.Drive(112);
             Console.WriteLine("***********************************************");
             fuCar1.Drive(742);
             fuCar2.Drive(345);
             fuCar3.Drive(532);
-
             Console.WriteLine("***********************************************");
             elCar1.Recharge(234);
             elCar2.Recharge(112);
             elCar3.Recharge(23);
-
             Console.WriteLine("***********************************************");
             fuCar1.ReFuel(241);
             fuCar2.ReFuel(236);
             fuCar3.ReFuel(321);
-
             Console.WriteLine("***********************************************");
             elCar1.PrintInfo();
             elCar2.PrintInfo();
             elCar3.PrintInfo();
-
             Console.WriteLine("***********************************************");
             fuCar1.PrintInfo();
             fuCar2.PrintInfo();
